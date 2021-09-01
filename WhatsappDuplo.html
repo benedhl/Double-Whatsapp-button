@@ -1,0 +1,104 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<div id="iconjanela_wp"><span class="fa fa-whatsapp"><i>fecha</i></span></div>
+<div id="janela_wp">
+	<p>Dúvidas sobre algum produto 👇🏼</p>
+	<p>
+		<a href="https://web.whatsapp.com/send?l=pt&phone=5514996837689&text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es..." target="_blank">
+			<span class="ddd">(14)</span>
+			<span class="numero">9 9683-7689</span>
+		</a>
+	</p>
+	<p>Problemas com sua compra 👇🏼</p>
+	<p>
+		<a href="https://web.whatsapp.com/send?l=pt&phone=5514991280480&text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es..." target="_blank">
+
+			<span class="ddd">(14)</span>
+			<span class="numero">9 9128-0480</span>
+		</a>
+	</p>
+</div>
+
+<style>
+.whatsapp-duplo{margin: 0}	
+	#abre_janela_wp,
+	#iconjanela_wp,
+	#janela_wp{
+		position: fixed;
+		right: 0;
+		top: 160px;
+		z-index: 500;
+		background: #e60014;
+		color: #FFF;
+
+		-webkit-border-top-left-radius: .3rem;
+		-webkit-border-bottom-left-radius: .3rem;
+		-moz-border-radius-topleft: .3rem;
+		-moz-border-radius-bottomleft: .3rem;
+		border-top-left-radius: .3rem;
+		border-bottom-left-radius: .3rem;
+		-webkit-box-shadow: 0 0 0.3rem 0 rgba(50,50,50,0.75);
+		-moz-box-shadow: 0 0 .3rem 0 rgba(50,50,50,0.75);
+		box-shadow: 0 0 0.3rem 0 rgba(50,50,50,0.75);
+		background-color: #27ae60;
+
+		-webkit-transition: all 0.2s ease-in-out;
+		   -moz-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+			 -o-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;		
+	}
+
+	#abre_janela_wp,
+	#iconjanela_wp{
+		z-index: 500;
+		top: 120px;
+	}
+		#abre_janela_wp{right: -50px}
+
+	#abre_janela_wp span, 
+	#iconjanela_wp span{
+		display: block;
+		font-size: 20px;
+		width: 45px;
+		height: 45px;
+		line-height: 45px;
+		text-align: center;
+		cursor: pointer;
+	}
+		#abre_janela_wp span i, 
+		#iconjanela_wp span i{display: none;}	
+
+	#janela_wp{
+		z-index: 5800;
+		padding: 10px 15px;
+		text-align: right;
+		background-color: #e60014;
+		display: none;		
+	}
+		#janela_wp a,
+		#janela_wp a:hover{
+			font-size: 18px;
+			text-decoration: none;
+			color: #FFF
+		}
+		#janela_wp a .ddd{font-size: 14px;}
+
+	#abre_janela_wp.open    {right: 0 !important;}
+	#iconjanela_wp.close  {right: -60px !important;}
+	#janela_wp.close        {right: -250px !important;}
+</style>
+
+<script>
+	iconjanela_wp.addEventListener("click", function() {
+    console.log("click comment")
+ var x = document.getElementById('janela_wp');
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+})
+
+</script>
+
